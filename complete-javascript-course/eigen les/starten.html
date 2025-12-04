@@ -1,0 +1,29 @@
+<h2>Document Object Model</h2>
+
+<script>
+    function starthetprogramma(){
+        let deDom = document.getElementsByTagName("html")
+        console.log(deDom)
+
+        let vara = document.getElementById("leuk").value;
+        console.log(vara)
+        document.getElementById("uitkomst").innerHTML = "hoi"+vara;
+        document.getElementById("uitkomst").style.backgroundColor = 'red';
+        console.log(document.getElementById("uitkomst").baseURI)
+        if(vara  ==   "hallo"){
+            alert("Welkom")
+        }else if(vara  ==   "doei"){
+            alert("tot de volgende keer")
+        }else{
+            alert()
+        }
+    }
+</script>
+<input id="leuk">
+<input type="button" onclick="starthetprogramma()" value="Klik hier">
+
+<div id="uitkomst"> hier wat type </div>
+
+
+
+https://0111.nl/opdrachten/miniopdrachtenhtmlcssjs.html

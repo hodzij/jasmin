@@ -1,0 +1,17 @@
+<h2>Opdracht 1</h2>
+
+<script>
+    function starthetprogramma(){
+        let vara = document.getElementById("leuk").value;
+        document.getElementById("uitkomst").style.backgroundColor = 'red';
+        console.log(document.getElementById("uitkomst").baseURI)
+        if(vara  ==   "hallo"){
+            alert("Welkom")
+        }else if(vara  ==   "doei"){
+            alert("tot de volgende keer")
+        }
+    }
+</script>
+<input id="leuk">
+<input type="button" onclick="starthetprogramma()" value="Klik hier">
+<div id="uitkomst"> hier wat typen</div>

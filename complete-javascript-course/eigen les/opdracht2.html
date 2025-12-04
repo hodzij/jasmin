@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Letter e Check</title>
+</head>
+<body>
+<h2>Opdracht 2</h2>
+<h3>Controleer of een woord de letter "e" bevat</h3>
+  <input type="text" id="woord" placeholder="Typ een woord">
+  <button id="checkBtn">Controleer</button>
+
+  <script>
+    document.getElementById('checkBtn').addEventListener('click', function () {
+      const invoer = document.getElementById('woord').value;
+      if (invoer.includes('e')) {
+        alert('Het woord bevat de letter "e"!');
+      }
+      // Als er geen 'e' in zit, gebeurt er niets
+    });
+  </script>
+</body>
+</html>
